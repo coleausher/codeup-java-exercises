@@ -26,13 +26,13 @@ public class ControlFlowExercises {
 //                        System.out.println(i);
 //                        i -= 5;
 //                    }while (i >= -10);
-
-
-//                int i = 2;
+//
+//
+//                long i = 2;
 //                do {
-//                    System.out.println(i * i);
-//                     i++;
-//                }while (i * i < 1000000);
+//                    System.out.println(i);
+//                     i *= i;
+//                }while (i < 1000000);
 
 
     // C. For
@@ -40,26 +40,28 @@ public class ControlFlowExercises {
 //                    System.out.println("i is " + i);
 //                }
 
-//                for (int i = 100; i <= -10; i -= 5) {
+//                for (int i = 100; i >= -10; i -= 5) {
 //                    System.out.println("i is " + i);
 //
 //                }
 
-//                for (int i = 2; i <= 1000000; i++){
-//                    System.out.println("i is " + i * i );
+//                for (long i = 2; i <= 1000000; i *= i){
+//                    System.out.println("i is " + i);
 //                }
 
 // 2. FIZZ BUZZ
 //                for (int i = 1; i <= 100; i++){
-//                    System.out.println(i);
-//                    if (i % 3 == 0) {
-//                        System.out.println("Fizz");
-//                    }
-//                    if (i % 5 == 0) {
-//                        System.out.println("Buzz");
-//                    }
+//
 //                    if (i % 3 == 0 && i % 5 == 0){
-//                        System.out.println("FIzzBuzz");
+//                        System.out.println("FizzBuzz");
+//
+//                    }else if (i % 3 == 0) {
+//                        System.out.println("Fizz");
+//
+//                    }else if (i % 5 == 0) {
+//                            System.out.println("Buzz");
+//                        } else{
+//                        System.out.println(i);
 //                    }
 //                }
 
@@ -71,12 +73,14 @@ public class ControlFlowExercises {
 //                        System.out.print("Enter an integer: ");
 //                        int number = scanner.nextInt();
 //
-//                        System.out.println("Number\tSquare\tCube");
+//                        System.out.println("Here is your table!");
+//                        System.out.println("Number | Square | Cube");
+//                        System.out.println("------ | ------ | ----");
 //
 //                        for (int i = 1; i <= number; i++) {
 //                            int square = i * i;
 //                            int cube = i * i * i;
-//                            System.out.println(i + "\t" + square + "\t" + cube);
+//                            System.out.printf("%-7s|%-9s|%-6s %n", i, square, cube);
 //                        }
 //
 //                        System.out.print("Do you want to continue? (y/n): ");
