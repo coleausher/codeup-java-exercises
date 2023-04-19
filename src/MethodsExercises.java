@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class MethodsExercises {
     public static void main(String[] args) {
-        int num1 = 2;
-        int num2 = 3;
+//        int num1 = 2;
+//        int num2 = 3;
 
 //        Addition Method call
 //          System.out.println("Added number is: " + addition(num1,num2));
@@ -30,6 +30,8 @@ public class MethodsExercises {
 ////        getInteger Method call
 //        int userInput = getInteger(1, 10);
 //        System.out.println("Your number is: " + userInput);
+
+//        System.out.println(dice());
 
     }
 ////   ------------------- Addition Method ----------------
@@ -90,37 +92,53 @@ public class MethodsExercises {
 
 
 //    ------------------ Factorial -------------------
+//    public class Factorial {
+//        public static void main(String[] args) {
+//            Scanner scanner = new Scanner(System.in);
+//            boolean Continue = true;
+//
+//            while (Continue) {
+//                System.out.print("Enter an integer between 1 and 10: ");
+//                int num = scanner.nextInt();
+//
+//                if(num < 1 || num > 10) {
+//                    System.out.println("ERROR: Please enter an integer between 1 and 10");
+//                    continue;
+//                }
+//
+//                long fact = 1;
+//                for (int i = 1; i <= num; i++) {
+//                    fact *= i;
+//                }
+//
+//                System.out.println("The factorial of " + num + " is " + fact + ".");
+//
+//                System.out.print("Do you want to continue? (y/n): ");
+//                String userInput = scanner.next().toLowerCase();
+//
+//                if (userInput.equals("n")) {
+//                    Continue = false;
+//                }
+//            }
+//            System.out.println("Goodbye!");
+//        }
+//    }
+//    }
 
-    public class Factorial {
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            boolean Continue = true;
 
-            while (Continue) {
-                System.out.print("Enter an integer between 1 and 10: ");
-                int num = scanner.nextInt();
+// -------------------- DICE ------------------------------
+    public static String dice(){
+    Scanner scanner = new Scanner (System.in);
+        System.out.println("How many sides does your dice have?");
+        int sides = scanner.nextInt();
+        int dice1 = (int) ((Math.random() * sides) + 1);
+        int dice2 = (int) ((Math.random() * sides) + 1);
 
-                if(num < 1 || num > 10) {
-                    System.out.println("ERROR: Please enter an integer between 1 and 10");
-                    continue;
-                }
 
-                long fact = 1;
-                for (int i = 1; i <= num; i++) {
-                    fact *= i;
-                }
-
-                System.out.println("The factorial of " + num + " is " + fact + ".");
-
-                System.out.print("Do you want to continue? (y/n): ");
-                String userInput = scanner.next().toLowerCase();
-
-                if (userInput.equals("n")) {
-                    Continue = false;
-                }
-            }
-            System.out.println("Goodbye!");
-        }
+        return "dice #1 = " + dice1 + " dice #2 = " + dice2;
     }
-    }
+
+}
+
+// --------------------- GAME DEVELOP ---------------------------
 
