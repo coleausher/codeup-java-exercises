@@ -4,7 +4,7 @@ import util.Input;
 
 public class CircleApp {
     public static void main(String[] args) {
-        Input input = new Input();
+        Input input = new Input(scanner);
         System.out.print("Enter the radius of the circle: ");
         double radius = input.getDouble();
 
