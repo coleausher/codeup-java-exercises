@@ -47,6 +47,6 @@ public class Input {
         return scanner.nextDouble();
     }
 
-    public int getInt(int i, int i1, String s) {
-    }
+//    public int getInt(int i, int i1, String s) {
+//    }
 }
