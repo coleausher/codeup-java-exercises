@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Input {
     private Scanner scanner;
 
-    public Input() {
-        scanner = new Scanner(System.in);
+    public Input(Scanner scanner) {
+        this.scanner = new Scanner(System.in);
     }
 
     public String getString() {
@@ -45,5 +45,8 @@ public class Input {
 
     public double getDouble() {
         return scanner.nextDouble();
+    }
+
+    public int getInt(int i, int i1, String s) {
     }
 }
