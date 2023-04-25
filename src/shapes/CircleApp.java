@@ -2,9 +2,12 @@ package shapes;
 
 import util.Input;
 
+import java.util.Scanner;
+
 public class CircleApp {
     public static void main(String[] args) {
-        Input input = new Input(scanner);
+        Scanner scanner = null;
+        Input input = new Input(null);
         System.out.print("Enter the radius of the circle: ");
         double radius = input.getDouble();
 
