@@ -8,6 +8,7 @@ public class Square extends Rectangle {
 
     //@Override
     public int getArea() {
+
         return (int) Math.pow(length, 2);
     }
 
